@@ -16,6 +16,9 @@ const createComicStrip = async (req, res) => {
     // 1️⃣ Gemini → comic panels
     const panels = await generatePanels(prompt);
 
+
+    console.log(panels, "panels")
+
     // 2️⃣ HF → image per panel
     const images = [];
     for (const panel of panels) {
