@@ -9,7 +9,6 @@ router.post("/", async (req, res) => {
     if (!messages || !Array.isArray(messages)) {
       return res.status(400).json({ error: "Messages required" });
     }
-
     const reply = await sendMessage(messages);
 
     res.json({ reply });
