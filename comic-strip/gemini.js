@@ -8,6 +8,7 @@ const generateText = async ({ prompt, model = "gemini-2.5-flash" }) => {
     model,
     contents: ` : ${prompt}`,
   });
+  console.log("response", response.text);
 
   return response.text;
 };

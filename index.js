@@ -23,6 +23,10 @@ app.post("/api/analyze-image", upload.single("image"), getImageAnalysis);
 const createComicStrip = require("./comic-strip");
 app.post("/api/create-image", createComicStrip);
 
+// chat
+const chatRouter = require("./chat");
+app.use("/api/chat", chatRouter);
+
 app.listen(PORT, () => {
   console.log("Server is running!");
   console.log(`Listening on http://localhost:${PORT}`);
