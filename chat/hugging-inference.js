@@ -1,7 +1,6 @@
 const { InferenceClient } = require("@huggingface/inference");
 
 const client = new InferenceClient(process.env.HF_TOKEN);
-console.log("HF_TOKEN", process.env.HF_TOKEN);
 
 const MAX_HISTORY = 6;
 
