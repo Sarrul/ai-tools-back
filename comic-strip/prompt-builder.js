@@ -1,4 +1,4 @@
-const { generateText } = require("./gemini");
+const { generateText } = require("./groq");
 
 const generatePanels = async (storyPrompt) => {
   const prompt = `
