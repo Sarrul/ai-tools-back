@@ -14,7 +14,7 @@ ${prompt}
 `;
 
   const output = await replicate.run(
-    "stability-ai/stable-diffusion:ac732df83cea7fff18b8472768c88ad041fa750ff7682a21affe81863cbe77e4",
+    "prompthero/openjourney-v4:e8818682e72a8b25895c7d90e889b712b6edfc5151f145e3606f21c1e85c65bf",
     {
       input: {
         prompt: styledPrompt,
