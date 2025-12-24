@@ -13,7 +13,7 @@ simple background, cartoon style, 2D illustration
 ${prompt}
 `;
 
-  const output = await replicate.run("google/imagen-4", {
+  const output = await replicate.run("black-forest-labs/flux-kontext-pro", {
     input: {
       prompt: styledPrompt,
       width: 1024,
