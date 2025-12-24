@@ -13,14 +13,17 @@ simple background, cartoon style, 2D illustration
 ${prompt}
 `;
 
-  const output = await replicate.run("stability-ai/sdxl", {
-    input: {
-      prompt: styledPrompt,
-      width: 1024,
-      height: 1024,
-      num_outputs: 1,
-    },
-  });
+  const output = await replicate.run(
+    "stability-ai/stable-diffusion-xl-base-1.0",
+    {
+      input: {
+        prompt: styledPrompt,
+        width: 1024,
+        height: 1024,
+        num_outputs: 1,
+      },
+    }
+  );
 
   // Replicate returns image URLs
   return output[0];
